@@ -5,12 +5,9 @@
 //Step 1:
 console.log('----------------Step 1:----------------');
 
-
 var greaterNumber = function (num1, num2) {
-
     var result = (num1 > num2) ? num1 : num2;
     console.log(`Greater number between '${num1}' and '${num2}' is : ${result}`);
-
 }
 
 greaterNumber(10, -10);
@@ -67,12 +64,5 @@ console.log(`The length of given word '${str}' is : ${result}`);
 var str="Google";
 var result= wordLength(str);
 console.log(`The length of given word '${str}' is : ${result}`);
-
-
-
-
-
-
-
 
 
