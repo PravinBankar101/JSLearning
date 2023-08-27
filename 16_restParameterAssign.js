@@ -1,28 +1,21 @@
-
-
-
 // WAP to find addition of all the numbers in array using rest parameter.
 //or WAP to find the addition of all the given numbers.
 
+function add(...num) {
+  let sum = 0;
 
-function add(...num ){   
-    let sum = 0;
-
-    for (let index = 0; index < num.length; index++) {
-        let element = num[index];
-        sum = sum + element;
-
-    }
-    console.log(`Sum of all the elements of array is: ${sum}`);
-    console.log(`-------------------------------------------------`);
+  for (let index = 0; index < num.length; index++) {
+    let element = num[index];
+    sum = sum + element;
   }
-
-  add(5, 6);
-  add(9, 5, 6);
-  add(78, 90, 51, 68);
-  add(89, 90, 45,78, 90, 51, 68);
-
-
+  console.log(`Sum of all the elements of array is: ${sum}`);
+  console.log(`-------------------------------------------------`);
+}
+console.log(`---------------------`);
+add(5, 6);
+add(9, 5, 6);
+add(78, 90, 51, 68);
+add(89, 90, 45, 78, 90, 51, 68);
 
 // console.log(` `);
 // console.log(`------Alternate way to do addition of given numbers--------`);
