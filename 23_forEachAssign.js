@@ -25,6 +25,8 @@ const arrayEmployees = [
     emp_mahi,
 ];
 
+
+
 console.log(
     `------------------------------------ Step 1: Employees working in "TCS" ------------------------------------`
 );
@@ -32,10 +34,12 @@ console.log(
 arrayEmployees.forEach((objectEmployee) => {
     if (objectEmployee.emp_company == "TCS") {
         console.log(
-            `Employee name: ${objectEmployee.emp_name} , Company name: ${objectEmployee.emp_company}`
+            `Employee Name: ${objectEmployee.emp_name} , Company: ${objectEmployee.emp_company}`
         );
     }
 });
+
+
 
 console.log(` `);
 console.log(
@@ -45,10 +49,12 @@ console.log(
 arrayEmployees.forEach((objectEmployee) => {
     if (objectEmployee.emp_dept == "Finance") {
         console.log(
-            `Employee name: ${objectEmployee.emp_name} , Department name: ${objectEmployee.emp_dept}`
+            `Employee Name: ${objectEmployee.emp_name} , Department: ${objectEmployee.emp_dept}`
         );
     }
 });
+
+
 
 console.log(` `);
 console.log(
@@ -57,22 +63,26 @@ console.log(
 arrayEmployees.forEach((objectEmployee) => {
     if (objectEmployee.emp_name.startsWith("R") == true) {
         console.log(
-            `Employee id: ${objectEmployee.emp_id}, Employee Name: ${objectEmployee.emp_name}, Employee Dept: ${objectEmployee.emp_dept}, Employee Salary: ${objectEmployee.emp_salary}, Employee Company: ${objectEmployee.emp_company}`
+            `Employee id: ${objectEmployee.emp_id}, Name: ${objectEmployee.emp_name}, Department: ${objectEmployee.emp_dept}, Salary: ${objectEmployee.emp_salary}, Company: ${objectEmployee.emp_company}`
         );
     }
 });
 
+
+
 console.log(` `);
 console.log(
-    `------------------------------------ Step 4: Employees having salary > 75000------------------------------------`
+    `------------------------------------ Step 4: Employees having salary greater than 75000 ------------------------------------`
 );
 arrayEmployees.forEach((objectEmployee) => {
     if (objectEmployee.emp_salary > 75000) {
         console.log(
-            `Employee Name: ${objectEmployee.emp_name}, Employee Company: ${objectEmployee.emp_company}, Employee Salary: ${objectEmployee.emp_salary}`
+            `Employee Name: ${objectEmployee.emp_name}, Company: ${objectEmployee.emp_company}, Salary: ${objectEmployee.emp_salary}`
         );
     }
 });
+
+
 
 console.log(` `);
 console.log(
@@ -81,10 +91,12 @@ console.log(
 arrayEmployees.forEach((objectEmployee) => {
     if (objectEmployee.emp_dept == "IT" && objectEmployee.emp_salary >= 50000) {
         console.log(
-            `Employee id: ${objectEmployee.emp_id}, Employee Name: ${objectEmployee.emp_name}, Employee Department: ${objectEmployee.emp_dept}, Employee Salary: ${objectEmployee.emp_salary}, Employee Company: ${objectEmployee.emp_company}`
+            `Employee id: ${objectEmployee.emp_id}, Name: ${objectEmployee.emp_name}, Department: ${objectEmployee.emp_dept}, Salary: ${objectEmployee.emp_salary}, Company: ${objectEmployee.emp_company}`
         );
     }
 });
+
+
 
 console.log(` `);
 console.log(
@@ -93,7 +105,7 @@ console.log(
 arrayEmployees.forEach((objectEmployee) => {
     if (objectEmployee.emp_company == "Infy") {
         console.log(
-            `Employee id: ${objectEmployee.emp_id}, Employee Name: ${objectEmployee.emp_name}, Employee Department: ${objectEmployee.emp_dept}, Employee Salary: ${objectEmployee.emp_salary}, Employee Company: ${objectEmployee.emp_company}`
+            `Employee id: ${objectEmployee.emp_id}, Name: ${objectEmployee.emp_name}, Department: ${objectEmployee.emp_dept}, Salary: ${objectEmployee.emp_salary}, Company: ${objectEmployee.emp_company}`
         );
     }
 });
